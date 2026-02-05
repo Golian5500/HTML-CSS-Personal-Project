@@ -1,0 +1,123 @@
+body::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(73, 76, 255, 0.349);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(73, 76, 255, 0.555);
+}
+
+body {
+    background-color: rgb(245, 238, 230);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+.header-logo-image {
+    height: 150px;
+    width: 150px;
+}
+
+.header-left-side,
+.header-right-side {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-logo {
+    display: flex;
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-left-side a,
+.header-right-side a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+    font-size: 15px;
+    font-weight: bold;
+    width: fit-content;
+    height: 100%;
+    text-align: center;
+    padding: 0 5%;
+    align-items: center;
+}
+
+.header-left-side a:hover,
+.header-right-side a:hover {
+    background-color: rgb(209, 200, 190);
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px 0 150px 0;
+}
+
+.hero-banner h1 {
+    width: 100%;
+    font-size: 10vw;
+    text-align: center;
+}
+
+.header-menu img{
+    width: 50px;
+    height: 50px;
+}
+
+.header-menu{
+    width: 75%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+@media(max-width: 800px) {
+    .header-left-side{
+        display: none;
+    }
+    .header-right-side{
+        display: none;
+    }
+    .header-logo{
+        width: 25%;
+        padding-left: 25px;
+    }
+    .header-menu{
+        display: flex;
+    }
+}
