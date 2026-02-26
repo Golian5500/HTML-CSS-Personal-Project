@@ -181,6 +181,46 @@ header {
     border-top-right-radius: 200px;
 }
 
+.menu-small {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 100px;
+    display: none;
+    flex-direction: row;
+}
+
+.left-menu-small {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(163, 163, 163, 0.075);
+}
+
+.right-menu-small {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0.925);
+    border-top-left-radius: 5px;
+    text-align: center;
+}
+
+.right-menu-small a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.right-menu-small a:hover{
+    background-color: rgba(255, 216, 42, 0.5);
+}
+
+body:has(.menu-hover:hover) .menu-small { display: flex; }
+
 @media(max-width: 800px) {
     .header-left-side {
         display: none;
